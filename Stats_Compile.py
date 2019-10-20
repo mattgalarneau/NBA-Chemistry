@@ -6,7 +6,6 @@ Created on Wed Oct 16 19:43:25 2019
 """
 
 import os
-os.chdir("C:/Users/Matthew/Desktop/NBA_Model/")
 import sys
 path = os.getcwd()+'\\Code\\Class'
 if path not in sys.path: 
@@ -60,8 +59,6 @@ for team in tqdm(teams):
     
     all_teams_all_dates[team] = chemistry
     
-
-os.chdir("C:/Users/Matthew/Desktop/NBA Chemistry/")
 mapping = pd.read_csv('Mapping.csv', index_col=0)
 
 for team_id in mapping.index:
